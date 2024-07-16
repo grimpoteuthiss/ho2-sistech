@@ -22,7 +22,7 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        "blue-bg": "8px 8px 0px 0px #60d5ec"
+        "hover": "6px 6px 0px 0px"
       },
     },
   },

@@ -25,10 +25,10 @@ function Button({
     return (
         <button
             className={`
-                text-white sm:text-xl font-bold py-2 px-4 sm:py-3 sm:px-5 bg-blue rounded-2xl border-2 border-ink hover:bg-green hover:shadow-[4px_4px_0px_0px] hover:shadow-blue transition-all duration-300
+                text-white sm:text-xl font-bold py-2 px-4 sm:py-3 sm:px-5 bg-blue rounded-lg border-2 border-ink hover:-translate-x-px hover:-translate-y-px hover:shadow-hover transition-all duration-300
                 ${variant === "primary"
-                    ? "bg-blue"
-                    : "bg-red"
+                    ? "bg-blue hover:bg-green hover:shadow-blue"
+                    : "bg-red hover:bg-blue hover:shadow-red"
                 }
                 ${className || ''}
             `}

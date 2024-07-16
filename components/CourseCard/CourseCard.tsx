@@ -29,7 +29,7 @@ function CourseCard({
     };
 
     return (
-        <div onClick={handleClick} className="w-[300px] relative p-3 border-2 border-black rounded-lg overflow-hidden flex flex-col gap-2.5 hover:-translate-x-px hover:-translate-y-px hover:shadow-blue-bg transition-all duration-200 ease-in-out hover:cursor-pointer">
+        <div onClick={handleClick} className="hover:-translate-x-px hover:-translate-y-px w-[300px] relative p-3 border-2 border-black rounded-lg overflow-hidden flex flex-col gap-2.5 hover:shadow-blue hover:shadow-hover transition-all duration-200 ease-in-out hover:cursor-pointer">
         <Image 
             src={imageUrl}
             alt="popular-course"
