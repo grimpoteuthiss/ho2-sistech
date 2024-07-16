@@ -9,7 +9,7 @@ function CourseCardList({
     cards
 }: CourseCardListProps) {
     return (
-        <div className="flex gap-12 flex-col lg:flex-row">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
             {cards.map((card, index) => (
             <CourseCard key={index} {...card} />
             ))}
