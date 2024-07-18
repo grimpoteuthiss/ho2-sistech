@@ -1,7 +1,5 @@
 import Image from "next/image";
-import Link from "next/image";
 import { useRouter } from "next/router";
-import { MouseEventHandler } from "react";
 
 type CourseCardProps = {
     imageUrl: string;
@@ -29,7 +27,7 @@ function CourseCard({
     };
 
     return (
-        <div onClick={handleClick} className="overflow-hidden w-[300px] relative p-3 border-2 border-black rounded-lg overflow-hidden flex flex-col gap-2.5 hover:-translate-x-px hover:-translate-y-px hover:shadow-blue-bg transition-all duration-200 ease-in-out hover:cursor-pointer">
+        <div onClick={handleClick} className="overflow-hidden hover:shadow-hover hover:shadow-blue overflow-hidden w-[280px] relative p-3 border-2 border-black rounded-lg flex flex-col gap-2.5 hover:-translate-x-px hover:-translate-y-px transition-all duration-200 ease-in-out hover:cursor-pointer">
         <Image 
             src={imageUrl}
             alt="popular-course"

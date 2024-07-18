@@ -5,28 +5,28 @@ const data = [
     imageUrl: "/images/back-end.jpg",
     title: "Back End",
     count: 6,
-    href: "/",
+    href: "/backend",
     isBestSeller: true
   },
   {
     imageUrl: "/images/front-end.jpg",
-    title: "Back End",
+    title: "Front End",
     count: 7,
-    href: "/",
+    href: "/frontend",
     isBestSeller: false
   },
   {
     imageUrl: "/images/react.jpg",
     title: "React",
     count: 6,
-    href: "/",
+    href: "/react",
     isBestSeller: true
   },
   {
     imageUrl: "/images/machine-learning.jpg",
     title: "Machine Learning",
     count: 7,
-    href: "/",
+    href: "/machinelearning",
     isBestSeller: true
   },
 ];
