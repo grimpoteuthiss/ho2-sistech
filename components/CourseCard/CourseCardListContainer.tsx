@@ -1,5 +1,6 @@
 import { CourseCardList } from "./CourseCardList";
 
+
 const data = [
   {
     imageUrl: "/images/back-end.jpg",
@@ -31,7 +32,26 @@ const data = [
   },
 ];
 
-function CourseCardListContainer() {
+
+type Course = {
+  id: string;
+  course: string;
+  description: string;
+  imgUrl: string;
+  totalTopics: number;
+  topics: object[];
+  lecturers: string[];
+}
+
+function CourseCardListContainer({rawData}: any) {
+  // console.log(rawData);
+  const data = rawData.data.slice(0,4).map((course: Course) => ({
+    imageUrl: course.imgUrl,
+    title: course.course,
+    count: course.totalTopics,
+    href:'/course',
+    isBestSeller: true
+  }));
   return <CourseCardList cards={data} />;
 }
 

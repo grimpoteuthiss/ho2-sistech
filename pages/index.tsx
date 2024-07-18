@@ -6,13 +6,23 @@ import { Testimonial } from "../components/Testimonial/Testimonial";
 import { Footer } from "../components";
 
 
-export default function Pages() {
+export async function getStaticProps() {
+    const res = await fetch("https://sistech-server.vercel.app/api/data");
+    const data = await res.json();
+    return {
+        props: {
+            data
+        },
+    };
+}
+
+export default function Pages({data}:any) {
     return (
         <>
             <Navbar />
             <Header />
             <Stat />
-            <PopularCourse />
+            <PopularCourse data={data} />
             <Testimonial/>
             <Footer/>
         </>
